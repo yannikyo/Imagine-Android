@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Imagine</string>
+    <string name="title_feed">Feed</string>
+    <string name="title_facts">Themen</string>
+    <string name="title_newPost">New Post</string>
+    <string name="anonym_string">Ein anonymer User</string>
+</resources>
