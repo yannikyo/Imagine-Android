@@ -1,7 +1,7 @@
 # Imagine-Android
 The Android-App with all its flaws and defects!
 
-Currently, the iOS version is the prototype of the Imagine Network. I made the Android version for friends, family and a helping student group, because over 60/70% of Germans use Android, not iOS. Therefore it only provides the basic features, like an endless feed, sign-up/log-in and posting different media objects. With so many Android developers around, I hope we will get the App to the standard of the iOS prototype in no time!
+Currently, the iOS version is the prototype of the Imagine Network. I made the Android version for friends, family and a helping student group, because over 60/70% of Germans use Android, not iOS. Therefore it only provides the basic features, like an endless feed, sign-up/log-in and posting different media objects. With so many Android developers around, I hope we will get the App to the standard of the iOS prototype in no time! You can get a look at the current App here: https://play.google.com/store/apps/details?id=com.justimagine.imagine
 
 # The Network:
 Imagine tries to be a social and entertaining place. A lot of open source and decentralized networks have tried it, so will we. We do not only focus on the serious parts, but try to find a responsible and fun way to get a new network.
@@ -11,7 +11,8 @@ You can find more informations about our ways of diminishing a bad mental state,
 
 # Features:
 - *Endless-Feed*: 
-Post thoughts, pictures, YouTubeVideos and Links
+Post thoughts, pictures, YouTube Videos and Links
+At the moment, links and YouTube Videos are not shown right.
 Upvote the post in four different ways (no downvotes for the social concept see manifesto on website).
 The feed is last-in, first-out for now. Our goal is to prevent a echo chamber, so this works as long as there are not too many users.
 
