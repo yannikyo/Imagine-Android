@@ -82,18 +82,18 @@
 
         <Button
             android:id="@+id/thanks_button"
-            android:layout_width="50dp"
+            android:layout_width="40dp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="0dp"
+            android:layout_marginStart="10dp"
             android:layout_marginLeft="0dp"
             android:layout_marginTop="0dp"
-            android:layout_marginBottom="0dp"
+            android:layout_marginBottom="2dp"
             android:background="@drawable/thanks_button1"
             android:textSize="14sp" />
 
         <Button
             android:id="@+id/wow_button"
-            android:layout_width="50dp"
+            android:layout_width="20dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="20dp"
             android:layout_marginLeft="0dp"
@@ -105,31 +105,31 @@
 
         <Button
             android:id="@+id/ha_button"
-            android:layout_width="50dp"
+            android:layout_width="25dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="20dp"
             android:layout_marginLeft="0dp"
             android:layout_marginTop="0dp"
-            android:layout_marginBottom="0dp"
+            android:layout_marginBottom="2dp"
             android:layout_weight="1"
             android:background="@drawable/ha_button1"
             android:textSize="14sp" />
 
         <Button
             android:id="@+id/nice_button"
-            android:layout_width="50dp"
+            android:layout_width="25dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="20dp"
             android:layout_marginLeft="0dp"
             android:layout_marginTop="0dp"
-            android:layout_marginBottom="0dp"
+            android:layout_marginBottom="2dp"
             android:layout_weight="1"
             android:background="@drawable/nice_button1"
             android:textSize="14sp" />
 
         <ImageView
             android:id="@+id/imageView3"
-            android:layout_width="60dp"
+            android:layout_width="30dp"
             android:layout_height="wrap_content"
             android:layout_marginLeft="20dp"
             android:layout_marginTop="5dp"

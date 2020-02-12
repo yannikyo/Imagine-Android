@@ -153,7 +153,7 @@ class MainAdapter(val postList: List<Post>): RecyclerView.Adapter<CustomViewHold
         }
 
         fun setName(post: Post) {
-            itemView.name_textView.text = "${post.user.name} ${post.user.surname}"
+            itemView.name_textView.text = post.user.name
 
             if (post.user.imageURL.isNullOrEmpty()) {
                 Glide.with(itemView).load(R.drawable.default_user).into(itemView.profile_picture_imageView)
@@ -202,7 +202,7 @@ class MainAdapter(val postList: List<Post>): RecyclerView.Adapter<CustomViewHold
         }
 
         fun setName(post: Post) {
-            itemView.name_textView.text = "${post.user.name} ${post.user.surname}"
+            itemView.name_textView.text = post.user.name
 
             if (post.user.imageURL.isNullOrEmpty()) {
                 Glide.with(itemView).load(R.drawable.default_user).into(itemView.profile_picture_imageView)
@@ -255,7 +255,7 @@ class MainAdapter(val postList: List<Post>): RecyclerView.Adapter<CustomViewHold
         }
 
         fun setName(post: Post) {
-            itemView.name_textView.text = "${post.user.name} ${post.user.surname}"
+            itemView.name_textView.text = post.user.name
 
             if (post.user.imageURL.isNullOrEmpty()) {
                 Glide.with(itemView).load(R.drawable.default_user).into(itemView.profile_picture_imageView)
@@ -329,7 +329,7 @@ abstract class CustomViewHolder(itemView: View) : RecyclerView.ViewHolder(itemVi
                             val user = User()
 
                             user.name = docData["name"] as? String ?: ""
-                            user.surname = docData["surname"] as? String ?: ""
+//                            user.surname = docData["surname"] as? String ?: ""
                             user.imageURL = docData["profilePictureURL"] as? String ?: ""
                             user.userUID = document.id
                             user.statusQuote = docData["statusText"] as? String ?: ""

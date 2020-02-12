@@ -53,7 +53,6 @@ class Post {
     var createTime = ""
     var OGRepostDocumentID: String? = null
     var originalPosterUID = ""
-    // kann eigentlich weg weil in User Objekt - Ne wegen GetUser
     var commentCount = 0
     var createDate: Date = Date()
     var toComments = false

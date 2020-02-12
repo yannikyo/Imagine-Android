@@ -323,15 +323,7 @@ class PostHelper {
                         }
                         this.posts.add(post)
                         println("Add Picture Post ##")
-                    } else // YouTubeVideo
-
-
-
-
-
-
-
-                        if (postType == "youTubeVideo") {
+                    } else if (postType == "youTubeVideo") {
 
 
                             return
@@ -367,8 +359,7 @@ class PostHelper {
                                 post.getUser()
                             }
                             this.posts.add(post)
-                        } else //Link
-                            if (postType == "link") {
+                        } else if (postType == "link") {
                                 val linkURL = documentData["link"] as? String ?: return
                                 // Falls er das nicht als (String) zuordnen kann
                                 val post = Post()

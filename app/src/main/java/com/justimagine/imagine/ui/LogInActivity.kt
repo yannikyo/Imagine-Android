@@ -1,9 +1,12 @@
 package com.justimagine.imagine.ui
 
+import android.content.Intent
+import android.net.Uri
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
 import android.widget.Toast
+import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.isInvisible
 import com.google.firebase.Timestamp
@@ -104,7 +107,44 @@ class LogInActivity: AppCompatActivity() {
                 val toast = Toast.makeText(this, "Die Passwörter stimmen nicht überein", duration)
                 toast.show()
             } else {
-                startSignUp()
+
+                // Initialize a new instance of
+
+                val builder = AlertDialog.Builder(this)
+
+                // Set the alert dialog title
+                builder.setTitle("Datenschutzerklärung")
+
+                // Display a message on alert dialog
+                builder.setMessage("Mit der Registrierung stimmst du unseren Datenschutzbestimmungen zu. Ist das okay für dich?")
+
+                // Set a positive button and its click listener on alert dialog
+                builder.setPositiveButton("Ja"){dialog, which ->
+                    // Do something when user press the positive butto
+                    startSignUp()
+                }
+
+
+                // Display a negative button on alert dialog
+                builder.setNegativeButton("Nein"){dialog,which ->
+                    Toast.makeText(applicationContext,"Alright then...",Toast.LENGTH_SHORT).show()
+                }
+
+
+                // Display a neutral button on alert dialog
+                builder.setNeutralButton("Datenschutzerklärung"){_,_ ->
+                    val openURL = Intent(Intent.ACTION_VIEW)
+                    openURL.data = Uri.parse("https://donmalte.github.io")
+                    startActivity(openURL)
+                }
+
+                // Finally, make the alert dialog using builder
+                val dialog: AlertDialog = builder.create()
+
+                // Display the alert dialog on app interface
+                dialog.show()
+
+
             }
         }
     }
